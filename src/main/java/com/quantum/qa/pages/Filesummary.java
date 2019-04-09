@@ -18,7 +18,7 @@ public class Filesummary extends Quantumwrappers {
 	// On this page locator values are retrieved from the object.properties file during run time.
 
 	public String loannumber;
-	WebDriverWait wait = new WebDriverWait(driver, 30);
+	WebDriverWait wait = new WebDriverWait(driver, 45);
 
 	public Filesummary getloannumber() throws InterruptedException, IOException {
 		WebElement filesummaryloannum = locateelement(prop.getProperty("locator.loannum"), prop.getProperty("FileSummaryloannum.xpath"));

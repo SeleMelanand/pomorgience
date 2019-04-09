@@ -3,11 +3,9 @@ package com.quantum.qa.testcase;
 import java.io.IOException;
 
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.quantum.qa.pages.Loginpage;
-import com.quantum.qa.wrappers.Genericwrappers;
 import com.quantum.qa.wrappers.Quantumwrappers;
 
 @Test(groups = {"smoketest","EndtoEnd"})
