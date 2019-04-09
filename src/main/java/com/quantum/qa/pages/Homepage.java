@@ -1,6 +1,9 @@
 package com.quantum.qa.pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -9,41 +12,56 @@ import com.quantum.qa.wrappers.Genericwrappers;
 public class Homepage extends Genericwrappers {
 	WebDriverWait wait = new WebDriverWait(driver, 30);
 
-	public Homepage navigatesalesmenu() {
-		WebElement salesmenu = locateelement("xpath", "//a[@id='eOrigination']");
-		mouseover(salesmenu);
-		return this;
+	//using pagefactory elements are getting loaded.	
 
+	// Initializing the page objects.
+	public Homepage() {
+		PageFactory.initElements(driver, this);
 	}
 
+	@FindBy(how = How.XPATH, using = "//a[@id='eOrigination']")
+	private WebElement salesmenu;
+
+	public Homepage navigatesalesmenu() {
+		mouseover(salesmenu);
+		return this;
+	}
+
+	@FindBy(how = How.XPATH, using = "//a[@id='eOrigination_QuickApp']")
+	private WebElement applicationmenu;
+
 	public Homepage naviapplicationmenu() {
-		WebElement applicationmenu = locateelement("xpath","//a[@id='eOrigination_QuickApp']");
 		mouseover(applicationmenu);
 		return this;
 	}
 
-	
+	@FindBy(how = How.XPATH, using = "//a[@id='QuickApp_Index']")
+	private WebElement fullappmenu;
+
 	public QucikappPage naviquickappmenu() {
-		WebElement fullappmenu = locateelement("xpath", "//a[@id='QuickApp_Index']");
 		mouseoverclick(fullappmenu);
 		return new QucikappPage();
 	}
-	
-	
+
+	@FindBy(how = How.XPATH, using = "//a[@id='QuickApp_UploadTransactionPage']")
+	private WebElement fileuploadmenu;
+
 	public Fileuploadpage navifileuploadmenu() {
-		WebElement fileuploadmenu = locateelement("xpath", "//a[@id='QuickApp_UploadTransactionPage']");
 		mouseoverclick(fileuploadmenu);
-		return new Fileuploadpage();		
-		
+		return new Fileuploadpage();
+
 	}
-	
+
+	@FindBy(how = How.ID, using = "main-search-box")
+	private WebElement loantext;
+
+	@FindBy(how = How.ID, using = "FilesummaryLoanNumber")
+	private WebElement filesummaryloannumtext;
+
 	public Filesummary loansearch(String loannum) {
-		
-		entervalueandclick(locateelement("id", "main-search-box"), loannum);
-		
-		wait.until(ExpectedConditions.visibilityOf(locateelement("id", "FilesummaryLoanNumber")));
+		loantext.sendKeys(loannum);
+		wait.until(ExpectedConditions.visibilityOf(filesummaryloannumtext));
 		return new Filesummary();
 	}
-	
 
 }

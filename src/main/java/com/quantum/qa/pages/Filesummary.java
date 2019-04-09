@@ -15,14 +15,16 @@ import com.quantum.qa.wrappers.Quantumwrappers;
 import com.quantum.qa.wrappers.Reporter;
 
 public class Filesummary extends Quantumwrappers {
+	// On this page locator values are retrieved from the object.properties file during run time.
+
 	public String loannumber;
 	WebDriverWait wait = new WebDriverWait(driver, 30);
 
 	public Filesummary getloannumber() throws InterruptedException, IOException {
-		WebElement filesummaryloannum = locateelement("xpath", "//div[@id='FilesummaryLoanNumber']/a");
+		WebElement filesummaryloannum = locateelement(prop.getProperty("locator.loannum"), prop.getProperty("FileSummaryloannum.xpath"));
 		wait.until(ExpectedConditions.visibilityOf(filesummaryloannum));
 
-		WebElement loannum = locateelement("xpath", "//div[@id='FilesummaryLoanNumber']/a ");
+		WebElement loannum = locateelement(prop.getProperty("locator.loannum"), prop.getProperty("FileSummaryloannum.xpath"));
 		loannumber = gettext(loannum);
 		System.out.println("Loan number generated is : " + loannumber);
 		
@@ -40,7 +42,6 @@ public class Filesummary extends Quantumwrappers {
 	}
 
 	public Filesummary verifytext(String tcname) throws IOException {
-		//loannumber.contains("[0-9]") && loannumber.length()==10
 		String regexvalue = "[0-9]{10}";
 		if (loannumber.matches(regexvalue)) {
 			status = "Pass";
@@ -58,10 +59,10 @@ public class Filesummary extends Quantumwrappers {
 	
 	
 	public  Borrowerdetails gotoborrowertab() {
-		WebElement borrowermenu = locateelement("id", "dock4_eFile_BorrowerView");
+		WebElement borrowermenu = locateelement(prop.getProperty("locator.borrowermenu"), prop.getProperty("FileSummaryborrowermenu.id"));
 		borrowermenu.click();
 				
-		wait.until(ExpectedConditions.elementToBeClickable(locateelement("xpath", "//a[text()='Add']")));
+		wait.until(ExpectedConditions.elementToBeClickable(locateelement(prop.getProperty("locator.addmenu"),prop.getProperty("FileSummaryaddmenu.xpath") )));
 		
 		
 		return new Borrowerdetails();
