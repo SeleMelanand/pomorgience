@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="132893" started-at="2019-04-08T14:56:33Z" finished-at="2019-04-08T14:58:46Z">
+    <groups>
+      <group name="smoketest">
+        <method signature="Tc002LoanCreationLoanapp.createloanapplication()[pri:0, instance:com.quantum.qa.testcase.Tc002LoanCreationLoanapp@64f6106c]" name="createloanapplication" class="com.quantum.qa.testcase.Tc002LoanCreationLoanapp"/>
+      </group> <!-- smoketest -->
+    </groups>
+    <test name="Default test" duration-ms="132893" started-at="2019-04-08T14:56:33Z" finished-at="2019-04-08T14:58:46Z">
+      <class name="com.quantum.qa.testcase.Tc002LoanCreationLoanapp">
+        <test-method status="PASS" signature="htmlreportgenerator()[pri:0, instance:com.quantum.qa.testcase.Tc002LoanCreationLoanapp@64f6106c]" name="htmlreportgenerator" is-config="true" duration-ms="1059" started-at="2019-04-08T14:56:33Z" finished-at="2019-04-08T14:56:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- htmlreportgenerator -->
+        <test-method status="PASS" signature="teescasedata()[pri:0, instance:com.quantum.qa.testcase.Tc002LoanCreationLoanapp@64f6106c]" name="teescasedata" is-config="true" duration-ms="0" started-at="2019-04-08T14:56:34Z" finished-at="2019-04-08T14:56:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teescasedata -->
+        <test-method status="PASS" signature="launchapp()[pri:0, instance:com.quantum.qa.testcase.Tc002LoanCreationLoanapp@64f6106c]" name="launchapp" is-config="true" duration-ms="14304" started-at="2019-04-08T14:56:34Z" finished-at="2019-04-08T14:56:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapp -->
+        <test-method status="PASS" signature="createloanapplication()[pri:0, instance:com.quantum.qa.testcase.Tc002LoanCreationLoanapp@64f6106c]" name="createloanapplication" duration-ms="117482" started-at="2019-04-08T14:56:48Z" finished-at="2019-04-08T14:58:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createloanapplication -->
+        <test-method status="PASS" signature="reportclose()[pri:0, instance:com.quantum.qa.testcase.Tc002LoanCreationLoanapp@64f6106c]" name="reportclose" is-config="true" duration-ms="756" started-at="2019-04-08T14:58:46Z" finished-at="2019-04-08T14:58:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportclose -->
+      </class> <!-- com.quantum.qa.testcase.Tc002LoanCreationLoanapp -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="EndtoEnd"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.quantum.qa.testcase.Tc004loanSalestoProcessing">
+        <methods>
+          <include name="salesactivity"/>
+          <include name="htmlreportgenerator"/>
+          <include name="teescasedata"/>
+          <include name="launchapp"/>
+          <include name="reportclose"/>
+        </methods>
+      </class> <!-- com.quantum.qa.testcase.Tc004loanSalestoProcessing -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
