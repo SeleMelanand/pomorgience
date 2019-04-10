@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import com.quantum.qa.pages.Loginpage;
 import com.quantum.qa.wrappers.Quantumwrappers;
 
-@Test(groups = {"smoketest"})
+@Test(groups = {"samplerun"})
 public class Tc002LoanCreationLoanapp extends Quantumwrappers{
 	
 	@BeforeClass
@@ -18,7 +18,7 @@ public class Tc002LoanCreationLoanapp extends Quantumwrappers{
 		testcasedescription = "Creating loan using Loan App functionality";
 	}
 	
-	@Test(groups = {"smoketest"})
+	@Test(groups = {"samplerun"})
 	//@Test(groups= {"smoketest"})
 	public void createloanapplication() throws InterruptedException, IOException {
 		new Loginpage()

@@ -50,7 +50,7 @@ public class Reporter extends Quantumwrappers{
 	
 	
 	public static void htmlreportgen() {
-		html = new ExtentHtmlReporter("./reports/smoketestresult.html");
+		html = new ExtentHtmlReporter("./reports/smoketestresult102019.html");
 		html.setAppendExisting(true);
 		extent = new ExtentReports();
 		extent.attachReporter(html);

@@ -4,19 +4,19 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="EndtoEnd"/>
+        <include name="samplerun"/>
       </run>
     </groups>
     <classes>
-      <class name="com.quantum.qa.testcase.Tc004loanSalestoProcessing">
+      <class name="com.quantum.qa.testcase.Tc002LoanCreationLoanapp">
         <methods>
-          <include name="salesactivity"/>
           <include name="htmlreportgenerator"/>
-          <include name="teescasedata"/>
+          <include name="createloanapplication"/>
           <include name="launchapp"/>
+          <include name="teescasedata"/>
           <include name="reportclose"/>
         </methods>
-      </class> <!-- com.quantum.qa.testcase.Tc004loanSalestoProcessing -->
+      </class> <!-- com.quantum.qa.testcase.Tc002LoanCreationLoanapp -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

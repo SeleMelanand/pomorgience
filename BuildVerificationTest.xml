@@ -4,7 +4,7 @@
 	<test name="Test">
 		<groups>
 			<run>
-				<include name="EndtoEnd" />
+				<include name="samplerun" />
 			</run>
 		</groups>
 
