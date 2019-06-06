@@ -32,15 +32,15 @@ public class Tc002LoanCreationLoanapp extends Quantumwrappers{
 		.blname("Public ")
 		.bssn("999-60-3000")
 		.estficoscore()
-		.proertystate()
-		.proertytype()
+		.proertystate();
+		/*.proertytype()
 		.occupancytype()
 		.estimatedvalue()
 		.loanpurpose()
 		.loanamount()
 		.saveloan()
 		.getloannumber()
-		.verifytext(testcase);
+		.verifytext(testcase);*/
 		
 	}
 	
