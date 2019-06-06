@@ -9,13 +9,13 @@
 		</groups>
 
 		<classes>
-			<class
-				name="com.quantum.qa.testcase.Tc001LoanCreationFileUpload" />
+			<!-- class
+				name="com.quantum.qa.testcase.Tc001LoanCreationFileUpload" /-->
 			<class name="com.quantum.qa.testcase.Tc002LoanCreationLoanapp" />
-			<class
-				name="com.quantum.qa.testcase.Tc003ReferralProgramSelection" />
-			<class
-				name="com.quantum.qa.testcase.Tc004loanSalestoProcessing" />
+			<!-- class
+				name="com.quantum.qa.testcase.Tc003ReferralProgramSelection" /-->
+			<!-- class
+				name="com.quantum.qa.testcase.Tc004loanSalestoProcessing" /-->
 
 		</classes>
 	</test> <!-- Test -->
