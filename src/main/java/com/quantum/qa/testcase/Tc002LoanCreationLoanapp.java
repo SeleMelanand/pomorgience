@@ -25,6 +25,10 @@ public class Tc002LoanCreationLoanapp extends Quantumwrappers{
 		.enterusername()
 		.enterpassword()
 		.clicklogin();
+		
+		
+		
+		
 		/*.navigatesalesmenu()
 		.naviapplicationmenu()
 		.naviquickappmenu()
