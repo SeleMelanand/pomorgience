@@ -26,7 +26,6 @@ public class Tc002LoanCreationLoanapp extends Quantumwrappers{
 		.enterpassword()
 		.clicklogin();
 		
-		
 		// trying to change the code and push it so that it triggers test in jenjins
 		
 		/*.navigatesalesmenu()
