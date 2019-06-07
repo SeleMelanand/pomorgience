@@ -25,7 +25,7 @@ public class Tc002LoanCreationLoanapp extends Quantumwrappers{
 		.enterusername()
 		.enterpassword()
 		.clicklogin()
-		.navigatesalesmenu()
+		/*.navigatesalesmenu()
 		.naviapplicationmenu()
 		.naviquickappmenu()
 		.bfname("Penny")
@@ -33,7 +33,7 @@ public class Tc002LoanCreationLoanapp extends Quantumwrappers{
 		.bssn("999-60-3000")
 		.estficoscore()
 		.proertystate();
-		/*.proertytype()
+		.proertytype()
 		.occupancytype()
 		.estimatedvalue()
 		.loanpurpose()
