@@ -57,7 +57,7 @@ public class Filesummary extends Quantumwrappers {
 	}
 
 	
-	
+	// just edited and pushed the code for verification build trigger through jenkins
 	public  Borrowerdetails gotoborrowertab() {
 		WebElement borrowermenu = locateelement(prop.getProperty("locator.borrowermenu"), prop.getProperty("FileSummaryborrowermenu.id"));
 		borrowermenu.click();
